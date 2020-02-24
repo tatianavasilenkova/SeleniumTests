@@ -1,0 +1,271 @@
+{
+  "id": "bb5d8b04-312e-4f9e-9bba-006d3b063906",
+  "version": "2.0",
+  "name": "OneAlv",
+  "url": "https://www.1a.lv/",
+  "tests": [{
+    "id": "417a2f9f-7d0e-485b-8e96-3c0e95dc5190",
+    "name": "AddItemIntoCart",
+    "commands": [{
+      "id": "d3057851-df69-44b8-a61d-e67dc7a3b84b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.1a.lv/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18e56437-07d6-478c-8773-b6b53784995d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85813e70-f337-4f4a-a74c-7acdcbc829e0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=shopping_cart_container",
+      "targets": [
+        ["id=shopping_cart_container", "id"],
+        ["css=#shopping_cart_container", "css:finder"],
+        ["xpath=//div[@id='shopping_cart_container']", "xpath:attributes"],
+        ["xpath=//header[@id='new-header']/div/div/div[2]/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1d465c40-e88d-44b7-9b73-f1bb4604f164",
+      "comment": "",
+      "command": "//click",
+      "target": "id=shopping_cart_container",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb66206c-5307-4301-83cf-77c6ccda2ace",
+      "comment": "",
+      "command": "click",
+      "target": "css=.items",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04d8d2ce-05b4-45ef-8b8b-791ef2c3a284",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/form/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Mans pirkumu grozs')]", "xpath:innerText"]
+      ],
+      "value": "Mans pirkumu grozs"
+    }, {
+      "id": "d6a0ae04-6b24-4d7e-99ce-c759d54e0909",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.empty > strong",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24a078ae-270d-46f5-a979-116bdea89552",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_products_text_field",
+      "targets": [
+        ["id=search_products_text_field", "id"],
+        ["name=search_text", "name"],
+        ["css=#search_products_text_field", "css:finder"],
+        ["xpath=//input[@id='search_products_text_field']", "xpath:attributes"],
+        ["xpath=//form[@id='autocomplete_form']/div/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80f71270-0877-4bd1-b237-7024fe25f6f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_products_text_field",
+      "targets": [
+        ["id=search_products_text_field", "id"],
+        ["name=search_text", "name"],
+        ["css=#search_products_text_field", "css:finder"],
+        ["xpath=//input[@id='search_products_text_field']", "xpath:attributes"],
+        ["xpath=//form[@id='autocomplete_form']/div/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "tejkannas"
+    }, {
+      "id": "51fe8fb1-65ac-4620-baa5-2213894acbba",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(9)",
+      "targets": [
+        ["css=input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@value='search']", "xpath:attributes"],
+        ["xpath=//form[@id='autocomplete_form']/div/input[7]", "xpath:idRelative"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76acf44b-bd7a-45eb-b173-105962ef2616",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#search-category-image-grid > .ait-search-result-image-box:nth-child(2) > .ait-search-result-title",
+      "targets": [
+        ["css=#search-category-image-grid > .ait-search-result-image-box:nth-child(2) > .ait-search-result-title", "css:finder"],
+        ["xpath=//div[@id='search-category-image-grid']/a[2]/strong", "xpath:idRelative"],
+        ["xpath=//a[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Tējkannas (ar svilpi)')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c380c96b-5e2b-4907-8b8c-adc54ab7ccc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tējkannas (ar svilpi)",
+      "targets": [
+        ["linkText=Tējkannas (ar svilpi)", "linkText"],
+        ["css=#search-category-image-grid > .ait-search-result-image-box:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='search-category-image-grid']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search/majsaimniecibas_preces/trauki/tejkannas_ar_svilpi/search-text/tejkannas')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Tējkannas (ar svilpi)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e8d1dc-6fb4-49cc-b55f-c3949dd63077",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.ait-search-result-count > span",
+      "targets": [
+        ["css=.ait-search-result-count > span", "css:finder"],
+        ["xpath=//div[@id='new-main']/div/div/div[2]/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2df043bd-43e3-4026-b951-018f2bbfa083",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.ait-search-result-count > span",
+      "targets": [],
+      "value": "searchResultQty"
+    }, {
+      "id": "6d92b5ca-d214-4db9-b98a-0212a974edc6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ait-search-result-count > span",
+      "targets": [],
+      "value": "27"
+    }, {
+      "id": "6e3a328d-17c2-4ceb-b38a-2f57be1bf622",
+      "comment": "",
+      "command": "//assert",
+      "target": "${searchResultQty}",
+      "targets": [],
+      "value": "!=0"
+    }, {
+      "id": "c040c00e-29f3-45af-8cfb-610d186c70d3",
+      "comment": "",
+      "command": "//assert selected value",
+      "target": "css=.ait-search-result-count > span",
+      "targets": [],
+      "value": "!=0"
+    }, {
+      "id": "b9be1e99-af49-47e1-a18e-8ffd6e591ec9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product:nth-child(1) .button > span",
+      "targets": [
+        ["css=.product:nth-child(1) .button > span", "css:finder"],
+        ["xpath=//div[@id='product_search_result_grid_container']/div[4]/section/div/div/div/div[3]/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d09b8a-7a70-40b7-b9f5-d7af018c588c",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//h3[contains(.,'Mayer&Boch Whistling Kettle With Plastic Handle 2.7l')]",
+      "targets": [
+        ["css=.product:nth-child(1) h3", "css:finder"],
+        ["xpath=//div[@id='product_search_result_grid_container']/div[4]/section/div/div/div/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Mayer&Boch Whistling Kettle With Plastic Handle 2.7l')]", "xpath:innerText"]
+      ],
+      "value": "addedItemName"
+    }, {
+      "id": "90929837-8583-4a74-8c67-e123ef7a32a8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product-is-in-cart > span",
+      "targets": [],
+      "value": "UZ GROZU"
+    }, {
+      "id": "60e0b7e4-a8c2-461a-b414-c90d29613040",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.title-link > .items",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "880e22aa-5d49-45ac-a957-c79e8ec586e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.title-link > .items",
+      "targets": [
+        ["css=.title-link > .items", "css:finder"],
+        ["xpath=//div[@id='shopping_cart_container']/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9381d8c1-7205-4a3b-89a5-e1124fb1520d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Mans pirkumu grozs"
+    }, {
+      "id": "42024958-a354-4322-8068-a860b2a47706",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.ait-cart-item > td:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8b1ac4a-f638-48e2-8f50-ef1300449c35",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//a[contains(text(),'Mayer&Boch Whistling Kettle With Plastic Handle 2.7l')]",
+      "targets": [
+        ["linkText=Mayer&Boch Whistling Kettle With Plastic Handle 2.7l", "linkText"],
+        ["css=h4 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mayer&Boch Whistling Kettle With Plastic Handle 2.7l')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div/form/section/table/tbody/tr[2]/td[2]/div/h4/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/majsaimniecibas_preces/trauki/tejkannas_ar_svilpi/mayerboch_whistling_kettle_with_plastic_handle_27')]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mayer&Boch Whistling Kettle With Plastic Handle 2.7l')]", "xpath:innerText"]
+      ],
+      "value": "actualItem"
+    }, {
+      "id": "84b61182-6bd2-4bec-a00e-7a0e6eb30925",
+      "comment": "",
+      "command": "assert",
+      "target": "${actualItem}",
+      "targets": [],
+      "value": "${addedItemName}"
+    }]
+  }],
+  "suites": [{
+    "id": "5ec1a913-0922-401e-8731-27cfefb958ab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["417a2f9f-7d0e-485b-8e96-3c0e95dc5190"]
+  }],
+  "urls": ["https://www.1a.lv/"],
+  "plugins": []
+}

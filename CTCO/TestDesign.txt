@@ -1,0 +1,18 @@
+Test Scenario:
+------------------------
+1. open https://ctco.lv/  page
+2. wait for page load (logo element visibility)
+3. open "Careers"
+4. wait for page load ("Vacancies" block should be visible)
+5. open All vacancies
+6. wait for vacancies list to be loaded
+7. find "Test Automation Engineer" position and open
+8. assert that correct position opened by page title
+9. verify position has "Professional skills and qualification" block
+10. verify requirement text: 
+
+"Experience in web application testing;
+\nExperience with automated testing tools and frameworks (for example: Selenium, REST Assured);
+\nUnderstanding of testing principles, practices and processes, good knowledge of SDLC;
+\nTeam player with good analytical and communication skills;
+\nGood level in English reading /speaking /writing, and good understanding of Latvian and Russian."

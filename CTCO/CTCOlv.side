@@ -1,0 +1,160 @@
+{
+  "id": "b14b2ff6-24ef-4d29-a807-27a48b17085a",
+  "version": "2.0",
+  "name": "CTCOlv",
+  "url": "https://ctco.lv/",
+  "tests": [{
+    "id": "c9b290df-ab1c-49e1-ab38-90ad4306cd92",
+    "name": "VerifyTestAutomationPositionRequirements",
+    "commands": [{
+      "id": "14f6bc11-c01e-4cdf-b560-5f3130e81aae",
+      "comment": "",
+      "command": "open",
+      "target": "https://ctco.lv/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c95a5e70-bb7b-4b5e-bdd6-7936e655f24d",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='ctco icon']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "87ff92c0-e10e-4796-a4be-4a217468f711",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3524e03d-8f7d-41f5-bdcd-07de47f56c9e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.navbar-brand > img",
+      "targets": [
+        ["css=.navbar-brand > img", "css:finder"],
+        ["xpath=//img[@alt='ctco icon']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a2121c1-7565-43aa-a8c2-625191a1a5d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-127 > .reload-page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78743880-ee3e-4724-b40e-f76ebcbd2149",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.col-sm-12:nth-child(1) h1",
+      "targets": [
+        ["css=.col-sm-12:nth-child(1) h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Vacancies')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b076909b-34f2-4cbb-8db6-6325087ad8db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(1) h1",
+      "targets": [
+        ["css=#menu-item-131 > .reload-page", "css:finder"],
+        ["xpath=//a[contains(text(),'Vacancies')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-131']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ctco.lv/careers/vacancies/')]", "xpath:href"],
+        ["xpath=//li[5]/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "480e5893-7e9a-4578-84b8-be7f2bdefae8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.fade-in-animation > .text-block > h1",
+      "targets": [
+        ["css=.fade-in-animation > .text-block > h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Vacancies')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "0e57fe05-dd02-446e-b38c-92cc708e0312",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.table-cell-display > .text-block > h1",
+      "targets": [
+        ["css=.table-cell-display > .text-block > h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Vacancies')]", "xpath:innerText"]
+      ],
+      "value": "Vacancies"
+    }, {
+      "id": "7d08d925-fead-41db-9a6f-da341b3ca13d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Test Automation Engineer",
+      "targets": [
+        ["linkText=Test Automation Engineer", "linkText"],
+        ["css=#menu-item-3249 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Test Automation Engineer')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-3249']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ctco.lv/careers/vacancies/test-automation-engineer-2/')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Test Automation Engineer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bbbae45-6944-4850-91a7-52b7a94a1817",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.active h1",
+      "targets": [
+        ["css=.active h1", "css:finder"],
+        ["xpath=//div[14]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Test Automation Engineer')]", "xpath:innerText"]
+      ],
+      "value": "Test Automation Engineer"
+    }, {
+      "id": "01942436-b42b-4d7d-9199-1dc51746be34",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.animated > .text-block strong > em",
+      "targets": [
+        ["css=.animated > .text-block strong > em", "css:finder"],
+        ["xpath=//div[14]/div/div/p[2]/strong/em", "xpath:position"]
+      ],
+      "value": "Professional skills and qualification:"
+    }, {
+      "id": "d71822c1-89cb-4818-8603-3c0ac2e8faaf",
+      "comment": "",
+      "command": "//store text",
+      "target": "css=.animated > .text-block p:nth-child(3)",
+      "targets": [],
+      "value": "skillsRequired"
+    }, {
+      "id": "17c2fb49-ff0a-4871-8da9-88c5bd6e9cf0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.animated > .text-block p:nth-child(3)",
+      "targets": [],
+      "value": "Experience in web application testing;\\nExperience with automated testing tools and frameworks (for example: Selenium, REST Assured);\\nUnderstanding of testing principles, practices and processes, good knowledge of SDLC;\\nTeam player with good analytical and communication skills;\\nGood level in English reading /speaking /writing, and good understanding of Latvian and Russian."
+    }]
+  }],
+  "suites": [{
+    "id": "caff5021-396e-4aa6-b620-3430fba594ba",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9b290df-ab1c-49e1-ab38-90ad4306cd92"]
+  }],
+  "urls": ["https://ctco.lv/"],
+  "plugins": []
+}
