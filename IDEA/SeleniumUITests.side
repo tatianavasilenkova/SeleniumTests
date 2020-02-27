@@ -1,0 +1,42 @@
+{
+  "id": "dbbb0215-7536-41d8-80a4-228f4e8ff71a",
+  "version": "2.0",
+  "name": "SeleniumUITests",
+  "url": "https://www.ctco.lv",
+  "tests": [{
+    "id": "46dcb8af-1be6-499e-be9c-431db0f8aec0",
+    "name": "OpenCTCoHomePageTest",
+    "commands": [{
+      "id": "a5096407-e802-4e8e-a9b2-336202ad211f",
+      "comment": "",
+      "command": "open",
+      "target": "https://ctco.lv/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12e22dbb-afe1-41df-87ec-8bc5f46181a7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1205x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abe20e9a-0254-4447-84a8-665aabec7502",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "C.T.Co People",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9dddc6aa-a65c-4396-b0bf-5305a19b9068",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["46dcb8af-1be6-499e-be9c-431db0f8aec0"]
+  }],
+  "urls": ["https://ctco.lv/", "https://www.ctco.lv/"],
+  "plugins": []
+}
