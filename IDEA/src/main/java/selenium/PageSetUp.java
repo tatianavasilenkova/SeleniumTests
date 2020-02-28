@@ -23,10 +23,15 @@ public class PageSetUp {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://ctco.lv/");
-        waitPageElement();
+        waitPageElement(driver);
+//        driver.manage().timeouts().pageLoadTimeout(30, SECONDS);
     }
 
-    private void waitPageElement() {
+    public WebDriver getDriver(){
+        return driver;
+    }
+
+    private void waitPageElement(WebDriver driver) {
 
         // Waiting 30 seconds for an element to be present on the page, checking
         // for its presence once every 5 seconds.
