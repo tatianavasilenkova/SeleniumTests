@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import selenium.PageSetUp;
 
-public class CtcoVacancytest {
+public class CtcoVacancytestByXPath {
 
     //    private static final By NAV_BAR = By.xpath("//a/span{text()='All vacancies'//..}");
 
@@ -26,6 +26,8 @@ public class CtcoVacancytest {
     static final By POSITION = By.xpath("//a[text()='Test Automation Engineer']");
 
     static final By REQUIRED_SKILL = By.xpath("//h1[text()='Test Automation Engineer']/following-sibling::div/p[3]");
+
+  //  static final By ALTERNATIVE = By.xpath("//h1[text()='Test Automation Engineer']/parent::div/descendant::*[text()='Professional skills and qualification:']/following::p[1]");
 
     @Before
     public void setUp() throws InterruptedException {
@@ -58,6 +60,9 @@ public class CtcoVacancytest {
 
                 WebElement requiredSkills = driver.findElement(REQUIRED_SKILL);
                 wait.until(ExpectedConditions.visibilityOfElementLocated(REQUIRED_SKILL));
+
+//                String s = driver.findElement(ALTERNATIVE).getText();
+//                System.out.println(s);
 
                 assertThat(requiredSkills.getText(), containsString("Good level in English reading /speaking /writing"));
                 assertThat(requiredSkills.getText(), containsString("Team player with good analytical and communication skills"));
